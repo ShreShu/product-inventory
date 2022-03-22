@@ -14,6 +14,7 @@
   color: white;
 }
 
-a:hover {
+.top-navbar a:hover {
   font-weight: bolder;
+  color: white;
 }

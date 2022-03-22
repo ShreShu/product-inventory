@@ -13,7 +13,7 @@ import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { Button } from "@mui/material";
 import axios from "axios";
-
+import "./Register.css";
 const Register = () => {
   const [values, setValues] = React.useState({
     email: "",
@@ -113,7 +113,7 @@ const Register = () => {
           onChange={handleChange("mobile")}
           aria-describedby="standard-weight-helper-text"
         />
-
+        <br />
         <Button type="submit" variant="contained">
           Submit
         </Button>

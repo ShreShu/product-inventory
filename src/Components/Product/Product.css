@@ -1,0 +1,16 @@
+.card > img {
+  height: 100px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  height: 350px;
+  width: 300px;
+  padding: 10px;
+}
+
+.product {
+  margin: 15px;
+}

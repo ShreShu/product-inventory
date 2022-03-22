@@ -11,6 +11,7 @@
 }
 body {
   justify-content: center;
+  background-image: linear-gradient(to right, rgb(83, 83, 83), rgb(0, 59, 0));
 }
 
 .MuiInputLabel-root,

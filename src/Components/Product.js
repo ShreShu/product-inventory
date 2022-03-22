@@ -6,7 +6,7 @@ export const Product = () => {
   return (
     <div className="">
       <div className="product-navbar">
-        <Link to="productlist">Product List</Link>
+        <Link to="">Product List</Link>
         <Link to="addproduct">Add Product</Link>
         <Link to="updateproduct">Update Product</Link>
         <Link to="deleteproduct">Delete Product</Link>

@@ -13,14 +13,14 @@ import Register from "./Components/Register";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/product" element={<Product />}>
-          <Route path="productlist" element={<ProductList />} />
+          <Route path="" element={<ProductList />} />
           <Route path="addproduct" element={<AddProduct />} />
           <Route path="updateproduct" element={<UpdateProduct />} />
           <Route path="deleteproduct" element={<DeleteProduct />} />

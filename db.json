@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": "",
+      "email": "",
+      "password": "",
+      "first_name": "",
+      "last_name": "",
+      "location": "",
+      "mobile": ""
+    },
+    {
+      "email": "",
+      "password": "",
+      "first_name": "",
+      "last_name": "",
+      "location": "",
+      "mobile": "",
+      "showPassword": false,
+      "id": "4XiiigJ"
+    },
+    {
+      "email": "abdshubham13@gmail.com",
+      "password": "12345",
+      "first_name": "Shubham",
+      "last_name": "Kumar",
+      "location": "Sarai",
+      "mobile": "9199922345",
+      "showPassword": false,
+      "id": "8pmQD3y"
+    }
+  ]
+}

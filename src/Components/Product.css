@@ -1,0 +1,19 @@
+.product-navbar a {
+  color: black !important;
+  text-decoration: none;
+  margin: 20px;
+  font-weight: 200;
+}
+
+.product-navbar a:hover {
+  font-weight: bold;
+}
+
+.product-navbar {
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  align-items: center;
+
+  background-image: linear-gradient(to right, rgb(83, 83, 83), rgb(0, 59, 0));
+}

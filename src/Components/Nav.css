@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  align-items: center;
+
+  background-image: linear-gradient(to right, rgb(83, 83, 83), rgb(0, 59, 0));
+}
+
+.top-navbar a {
+  text-decoration: none;
+  margin: 20px;
+  font-weight: 200;
+  color: white;
+}
+
+a:hover {
+  font-weight: bolder;
+}

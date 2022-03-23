@@ -22,8 +22,7 @@ function App() {
         <Route path="/product" element={<Product />}>
           <Route path="" element={<ProductList />} />
           <Route path="addproduct" element={<AddProduct />} />
-          <Route path="updateproduct" element={<UpdateProduct />} />
-          <Route path="deleteproduct" element={<DeleteProduct />} />
+          <Route path="updateproduct/:id" element={<UpdateProduct />} />
         </Route>
         <Route path="/about" element={<About />} />
       </Routes>

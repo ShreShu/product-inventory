@@ -8,8 +8,7 @@ export const Product = () => {
       <div className="product-navbar">
         <Link to="">Product List</Link>
         <Link to="addproduct">Add Product</Link>
-        <Link to="updateproduct">Update Product</Link>
-        <Link to="deleteproduct">Delete Product</Link>
+        <Link to="updateproduct/:id">Update Product</Link>
       </div>
       <div>
         <Outlet />

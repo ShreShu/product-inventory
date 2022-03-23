@@ -42,15 +42,6 @@
   ],
   "products": [
     {
-      "product_name": "Alisha Solid Women's Cycling Shorts",
-      "retail_price": "111000",
-      "discounted_price": 479,
-      "description": "Key Features of Alisha Solid Women's Cycling Shorts Cotton Lycra Navy, Red, White, Red,Specifications of Alisha Solid Women's Cycling Shorts Shorts Details Number of Contents in Sales Package Pack of 4 Fabric Cotton Lycra Type Cycling Shorts General Details Pattern Solid Ideal For Women's In the Box 4 shorts Additional Details Style Code ALTGHT4P_26 Fabric Care Gentle Machine Wash in Lukewarm Water, Do Not Bleach",
-      "brand": "Alisha",
-      "image": "",
-      "id": "ce5a6818f7707e2cb61fdcdbba61f5ad"
-    },
-    {
       "id": "8542703ca9e6ebdf6d742638dfb1f2ca",
       "product_name": "FabHomeDecor Fabric Double Sofa Bed",
       "retail_price": 32157,
@@ -2412,6 +2403,33 @@
       "brand": "pumba",
       "image": "",
       "id": "tjeJiK2"
+    },
+    {
+      "product_name": "",
+      "retail_price": "",
+      "discounted_price": "",
+      "description": "",
+      "brand": "",
+      "image": "",
+      "id": "42v8jXR"
+    },
+    {
+      "product_name": "",
+      "retail_price": "",
+      "discounted_price": "",
+      "description": "",
+      "brand": "",
+      "image": "",
+      "id": "xQ4IRE6"
+    },
+    {
+      "product_name": "",
+      "retail_price": "",
+      "discounted_price": "",
+      "description": "",
+      "brand": "",
+      "image": "",
+      "id": "_qRXToN"
     }
   ]
 }

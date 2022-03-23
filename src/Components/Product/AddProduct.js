@@ -1,6 +1,7 @@
 import { Input, InputLabel, Button, TextareaAutosize } from "@mui/material";
 import axios from "axios";
 import React, { useState } from "react";
+import { confirmAlert } from "react-confirm-alert";
 
 export const AddProduct = () => {
   const [values, setValues] = useState({
@@ -16,14 +17,29 @@ export const AddProduct = () => {
   };
   const submitHandler = (event) => {
     event.preventDefault();
-    axios
-      .post("http://localhost:3001/products", values)
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((error) => {
-        console.log(error);
+
+    if (localStorage.getItem("user") != "") {
+      axios
+        .post("http://localhost:3001/products", values)
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    } else {
+      confirmAlert({
+        title: "You need to login to Add",
+        buttons: [
+          {
+            label: "OK",
+            onClick: () => {
+              return;
+            },
+          },
+        ],
       });
+    }
   };
 
   return (

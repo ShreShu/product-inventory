@@ -8,23 +8,55 @@ import "react-confirm-alert/src/react-confirm-alert.css"; // Import css
 export const Product = ({ product, deleteProd }) => {
   const navigate = useNavigate();
 
-  const confirmDelete = (id) => {
-    confirmAlert({
-      title: "Confirm to Delete",
-      message: "Are you sure to do this.",
-      buttons: [
-        {
-          label: "Yes",
-          onClick: () => deleteProd(id),
-        },
-        {
-          label: "No",
-          onClick: () => {
-            return;
+  const validateLogin = () => {
+    if (localStorage.getItem("user") != "") {
+      navigate(`updateproduct/${product.id}`);
+    } else {
+      confirmAlert({
+        title: "You need to login to edit",
+        buttons: [
+          {
+            label: "OK",
+            onClick: () => {
+              return;
+            },
           },
-        },
-      ],
-    });
+        ],
+      });
+    }
+  };
+
+  const confirmDelete = (id) => {
+    if (localStorage.getItem("user") != "") {
+      confirmAlert({
+        title: "Confirm to Delete",
+        message: "Are you sure to do this.",
+        buttons: [
+          {
+            label: "Yes",
+            onClick: () => deleteProd(id),
+          },
+          {
+            label: "No",
+            onClick: () => {
+              return;
+            },
+          },
+        ],
+      });
+    } else {
+      confirmAlert({
+        title: "You need to login to delete",
+        buttons: [
+          {
+            label: "OK",
+            onClick: () => {
+              return;
+            },
+          },
+        ],
+      });
+    }
   };
 
   return (
@@ -47,10 +79,7 @@ export const Product = ({ product, deleteProd }) => {
           >
             Delete
           </button>
-          <button
-            onClick={() => navigate(`updateproduct/${product.id}`)}
-            className="btn btn-success"
-          >
+          <button onClick={() => validateLogin()} className="btn btn-success">
             Edit
           </button>
         </div>

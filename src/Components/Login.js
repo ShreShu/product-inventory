@@ -18,7 +18,6 @@ export const Login = () => {
     axios
       .get("http://localhost:3001/users")
       .then((res) => {
-        console.log(res);
         setUsers(res.data);
       })
       .catch((error) => {
@@ -44,6 +43,7 @@ export const Login = () => {
         credentials.password === users[i].password
       ) {
         setFound(true);
+        localStorage.setItem("user", credentials.email);
       }
     }
   };
@@ -51,16 +51,27 @@ export const Login = () => {
   const loginValidation = (e) => {
     e.preventDefault();
     verify(credentials);
-    if (found) {
-      localStorage.setItem("user", credentials.email);
-    }
-    console.log(credentials);
+    console.log("log", credentials);
+  };
+
+  const logout = () => {
+    localStorage.setItem("user", "");
+    setFound(false);
+    navigate("");
   };
 
   return (
     <div>
-      {found ? (
-        <div>{credentials.email}</div>
+      {localStorage.getItem("user") != "" ? (
+        <div>
+          {localStorage.getItem("user")}
+          <button
+            onClick={logout}
+            className="btn btn-outline-dark p-1 btn-block"
+          >
+            Logout
+          </button>
+        </div>
       ) : (
         <form onSubmit={loginValidation}>
           <div className="login-border">

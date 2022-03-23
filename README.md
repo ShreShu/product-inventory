@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# Product-inventory
+
+Basic react web app that allows user to manage products.
+We can register,login and add,delete and update product details after login
+Json-server is used to store and supply data
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

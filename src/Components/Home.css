@@ -3,3 +3,12 @@
   background-image: linear-gradient(to right, rgb(83, 83, 83), rgb(0, 59, 0));
   overflow-x: hidden;
 }
+
+.home1 {
+  margin-left: 10vh;
+}
+
+.home1 > h1,
+h3 {
+  color: white;
+}
